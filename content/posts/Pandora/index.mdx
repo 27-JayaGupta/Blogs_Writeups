@@ -216,7 +216,7 @@ We found **Username = Daniel** and **Password = HotelBabylon23**
 
 Now, I am going to try to ssh with the credentials we have found:
 
-![SSH](ssh.png)
+![SSH](./ssh.png)
 
 ### Privilege Escalation
 
@@ -230,7 +230,7 @@ scans the entire Linux Machine and gives you all the information accessible .
 
 On scanning , I found that the machine used sudo version 1.8.31 which was Vulnerable to CVE-2021-4034 [Read More](https://nvd.nist.gov/vuln/detail/CVE-2021-4034).
 
-![SudoVuln](Sudo_vuln.png)
+![SudoVuln](./Sudo_vuln.png)
 
 Found the exploit of the above vulnerability [here](https://github.com/berdav/CVE-2021-4034) and yeah got the root access.
 
@@ -326,15 +326,15 @@ daniel@pandora:~$
 
 ```
 
-![pandora_console](pandora_console.png)
+![pandora_console](./pandora_console.png)
 
 On entering any random username, we see this dialog box
 
-![daniel](daniel.png)
+![daniel](./daniel.png)
 
 On entering username: daniel and pasword : HotelBabylon23 , we get this
 
-![daniel1](daniel1.png)
+![daniel1](./daniel1.png)
 
 On googling , I got that this is a vulnerability of Pandora FMS where session_id is prone to SQL injection.
 Using the command , I got
@@ -648,7 +648,7 @@ g4e01qdgk36mfdh90hvcc54umq,"id_usuario|s:4:""matt"";alert_msg|a:0:{}new_chat|b:0
 
 Setting the session id of admin , I logged in as admin(here matt is the admin).
 
-![fms](fms.png)
+![fms](./fms.png)
 
 After some exploration of the website , I found the file Manager and was able to upload files successfully.
 
